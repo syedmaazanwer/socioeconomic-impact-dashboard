@@ -1,0 +1,85 @@
+:root {
+  --sidebar-bg: #0f1724;
+  --panel-bg: #ffffff;
+  --muted: #6b7280;
+}
+
+.app-root {
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.app-bar {
+  background: linear-gradient(90deg, #0ea5a9, #2563eb);
+  color: white;
+}
+
+/* Sidebar branding */
+.MuiDrawer-paper {
+  background: #ffffff;
+  color: #111827;
+  border-right: 1px solid rgba(15, 23, 40, 0.12);
+}
+
+.MuiListItemIcon-root {
+  color: #111827;
+}
+
+.MuiListItemText-root {
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.app-root .MuiCard-root {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 30, 60, 0.08);
+  overflow: hidden;
+}
+
+.metric-card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  border-left: 6px solid rgba(37, 99, 235, 0.12);
+}
+.metric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(20,30,60,0.12);
+}
+
+/* Cards */
+.MuiCardContent-root {
+  padding: 18px 22px;
+}
+
+/* Project table compact */
+.MuiTableCell-root {
+  font-size: 0.95rem;
+}
+
+/* Make main content centered and wider */
+.main-content {
+  padding-top: 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 48px);
+}
+
+/* Table container: ensure full visibility */
+.MuiTableContainer-root {
+  box-shadow: none;
+  max-height: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .MuiDrawer-paper {
+    display: block;
+  }
+  .app-bar {
+    margin-left: 0;
+  }
+  .app-root {
+    padding-left: 0;
+  }
+}
